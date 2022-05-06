@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: microservicio-saldo-cuenta
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:7000    
+  banner:
+    location: classpath:banner/banner.txt
+    image:
+     location: classpath:fotocreador/microservicios.png  
+  kafka:
+    bootstrap-servers: LIM-8VD52F3.usersad.everis.int:9092  
+config:
+ balanceador:
+  test: prueba balanceador de microservicio-saldo-cuenta
